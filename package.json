@@ -1,0 +1,59 @@
+{
+  "name": "flow-mmedian",
+  "version": "0.0.0",
+  "description": "Transform stream factory to find sliding-window median values (moving median) over a numeric data stream.",
+  "author": {
+    "name": "Rebekah Smith",
+    "email": "rebekahjs17@gmail.com"
+  },
+  "contributors": [
+    {
+      "name": "Rebekah Smith",
+      "email": "rebekahjs17@gmail.com"
+    },
+    {
+      "name": "Athan Reines",
+      "email": "athan@nodeprime.com"
+    }
+  ],
+  "scripts": {
+    "test": "mocha"
+  },
+  "main": "./lib",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/RebekahJ/flow-mmedian.git"
+  },
+  "keywords": [
+    "stream",
+    "writable",
+    "readable",
+    "transform",
+    "through",
+    "flow",
+    "flow.io",
+    "minimum",
+    "min",
+    "moving min",
+    "sliding window",
+    "statistics",
+    "stats"
+  ],
+  "bugs": {
+    "url": "https://github.com/RebekahJ/flow-mmedian/issues"
+  },
+  "dependencies": {
+    "through2": "^0.5.1"
+  },
+  "devDependencies": {
+    "chai": "1.x.x",
+    "event-stream": "^3.1.7",
+    "mocha": "1.x.x"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "http://www.opensource.org/licenses/MIT"
+    }
+  ]
+}
