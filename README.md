@@ -3,6 +3,8 @@ flow-mmedian
 
 Transform stream factory which calculates a sliding-window median (moving-median) over a numeric data stream.
 
+Method 2 - work in progress.
+
 ## Installation
 
 
