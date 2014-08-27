@@ -43,7 +43,8 @@
     "url": "https://github.com/RebekahJ/flow-mmedian/issues"
   },
   "dependencies": {
-    "through2": "^0.5.1"
+    "through2": "^0.5.1",
+    "seedrandom": "2.3.6"
   },
   "devDependencies": {
     "chai": "1.x.x",
