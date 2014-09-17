@@ -8,7 +8,11 @@ var eventStream = require('event-stream'),
 var prng = seedrandom('hello.')
 
 // Create an array containing random numbers:
+<<<<<<< HEAD
 var randoms = new Array( 1000499 );
+=======
+var randoms = new Array( 1000099 );
+>>>>>>> median2
 for (var i = 0; i < randoms.length; i++) {
     randoms[i] = Math.round(prng() * 100);
 }
@@ -25,7 +29,11 @@ var randStream = eventStream.readArray(randoms);
 
 // Create a new moving-median stream:
 var myStream = medStream()
+<<<<<<< HEAD
 	.window(500)
+=======
+	.window(100)
+>>>>>>> median2
 	.stream();
 
 function printEnd() {

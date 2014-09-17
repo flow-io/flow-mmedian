@@ -54,14 +54,14 @@ describe('moving median', function tests() {
     }); //end non-numeric window
 
     // Test 5
-    it('should find the median value of the data in the window', function test(done) {
+    it('should calculate the median of piped data in the window (odd)', function test(done) {
 		var data, expected, tStream, WINDOW = 5;
 
 		// Simulate some data
-		data = [19,24,3,67,84,26,74,23,26,15,98,75];
+		data = [19,24,3,67,84,26,74,23,26,15,98,75,18];
 
 		// Expected values of median in moving window
-		expected = [24,26,67,67,26,26,26,26];
+		expected = [24,26,67,67,26,26,26,26,26];
 
 		// Create a new median stream
 		tStream = medStream()
@@ -95,14 +95,14 @@ describe('moving median', function tests() {
     });
 
     // Test 6
-    it('should calculate the median of piped data using an arbitrary window size', function test(done) {
+    it('should calculate the median of piped data using an even window size', function test(done) {
 		var data, expected, tStream, WINDOW = 6;
 
 		// Simulate some data
-		data = [75,34,14,56,97,85,15,24,37,56,85,35];
+		data = [75,34,14,56,97,85,15,24,37,56,85,35,21,59];
 
 		// Expected values of median in moving window
-		expected = [65.5,45,40,46.5,46.5,46.5,36];
+		expected = [65.5,45,40,46.5,46.5,46.5,36,36,46.5];
 
 		// Create a new median stream
 		tStream = medStream()
